@@ -6,10 +6,10 @@ It's an unfortunate decision on Google's part to remove the static target from t
 Here you will find WebRTC static framework for iOS recompiled using modified ninja files. This framework has some additional [Mesibo](https://mesibo.com) specific code. Note that, Mesibo specific code is additional and has no impact on the original API. You can use it even if you are not using Mesibo.
 
 ## Bitcode
-Additionally, this build is bitcode enabled unlike the [Google version](https://webrtc.org/native-code/ios/) which is NOT bitcode enabled.
+You need to disable bitcode when using this framework. If you require bitcode enabled library, write to us. 
 
 ## IMPORTANT - install LFS before CLOING the Repository
-WebRTC framework is a large download (over 800MB+). This requires that the [Git LFS](https://git-lfs.github.com/) is installed before you clone the repository. Cloning likely to fail if you try to clone without LFS installed. In such case, delete the entire repository, install LFS and clone again.
+WebRTC framework is a large download. This requires that the [Git LFS](https://git-lfs.github.com/) is installed before you clone the repository. Cloning likely to fail if you try to clone without LFS installed. In such case, delete the entire repository, install LFS and clone again.
 
 To download, open a terminal and issue following commands:
 
